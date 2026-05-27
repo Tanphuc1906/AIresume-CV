@@ -14,9 +14,13 @@
 
 ## ✨ Tính năng nổi bật
 
+- **2 Chế độ hoạt động linh hoạt**: 
+  - *Chế độ 1 (Tối ưu & Viết lại CV)*: Phân tích khoảng trống giữa CV & JD, phỏng vấn và tự động viết lại CV.
+  - *Chế độ 2 (Luyện tập Phỏng vấn HR)*: Giả lập buổi phỏng vấn thực tế với Trưởng phòng Nhân sự AI dựa trên Mô tả công việc (JD), đánh giá ngay sau mỗi câu trả lời.
+- **Quản lý Phiên thông minh**: Tự động lưu trữ tiến trình phỏng vấn thành file `.pkl`. Bạn có thể tải xuống phiên đang phỏng vấn dở và tải lên lại vào ngày hôm sau để AI tự động khôi phục ngữ cảnh (kể cả hình ảnh).
 - **Tự động phân tích PDF CV & Ảnh JD**: Ứng dụng hỗ trợ đọc văn bản từ file PDF hoặc trích xuất chữ trực tiếp từ hình ảnh (Multimodal OCR) bằng công nghệ Gemini.
 - **Phỏng vấn giả định (Mock Interview)**: Giao diện Chatbot tương tác thời gian thực (như Messenger). AI sẽ đặt những câu hỏi hóc búa dựa trên những điểm yếu trong CV của bạn so với JD.
-- **Auto-Rewrite CV**: Sau cuộc phỏng vấn, AI sẽ tự động "nhào nặn" các câu trả lời thực tế của bạn vào bản CV mới (định dạng Markdown), đảm bảo khớp 100% với yêu cầu của JD mà không bị "sáo rỗng".
+- **Auto-Rewrite CV**: Sau cuộc phỏng vấn ở Chế độ 1, AI sẽ tự động "nhào nặn" các câu trả lời thực tế của bạn vào bản CV mới (định dạng Markdown), đảm bảo khớp 100% với yêu cầu của JD mà không bị "sáo rỗng".
 - **Bring Your Own Key (BYOK)**: Tích hợp hệ thống bảo mật an toàn, người dùng tự nhập API Key để sử dụng mà không lo bị chia sẻ hạn mức.
 - **Bắt lỗi thông minh**: Tự động cảnh báo giới hạn (Rate limit 429) và hướng dẫn người dùng chuyển đổi linh hoạt giữa `gemini-2.5-flash` và `gemini-2.5-pro`.
 
