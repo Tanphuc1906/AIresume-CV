@@ -15,6 +15,10 @@ from core.ai_agent import ResumeAgent
 
 from core.pdf_parser import extract_text_from_pdf
 
+@st.cache_data(show_spinner="Đang xử lý PDF...")
+def cached_extract_text_from_pdf(pdf_bytes):
+    return extract_text_from_pdf(pdf_bytes)
+
 st.set_page_config(page_title="AI Resume Agent", page_icon="👔", layout="wide")
 
 st.title("👔 Interactive AI Recruiter (Resume Builder)")
@@ -148,7 +152,7 @@ with col1:
         
         if cv_file:
             if cv_file.type == "application/pdf":
-                cv_content = extract_text_from_pdf(cv_file.read())
+                cv_content = cached_extract_text_from_pdf(cv_file.read())
             else:
                 cv_content = Image.open(cv_file)
             st.success("Đã nạp CV thành công!")
